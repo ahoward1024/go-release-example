@@ -18,4 +18,5 @@ func main() {
 	fmt.Printf("Hello world!")
 	PrintfFeature("This is some more text!")
 	PrintfFeature("This is the third line of text")
+	PrintfFix("Fixed typo in third line of text")
 }
