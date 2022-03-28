@@ -21,6 +21,7 @@ func PrintfBreakingChange(ty string, message string) {
 }
 
 func main() {
+	flag.Parse()
 	if motd == "" {
 		fmt.Println("Error: Message of the day cannot be empty.")
 		os.Exit(1)
@@ -34,5 +35,4 @@ func main() {
 
 func init() {
 	flag.StringVar(&motd, "motd", "", "Message of the day to print at startup")
-	flag.Parse()
 }
